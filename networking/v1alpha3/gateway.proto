@@ -354,6 +354,10 @@ message Server {
     // client side certificate.
     string ca_certificates = 5;
 
+    // Optional: The path to a file containing certificate revocation list
+    // to use in verifying a presented client side certificate.
+    string crl = 11;
+
     // The credentialName stands for a unique identifier that can be used
     // to identify the serverCertificate and the privateKey. The
     // credentialName appended with suffix "-cacert" is used to identify
